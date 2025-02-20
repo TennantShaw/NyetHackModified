@@ -147,6 +147,7 @@ object Game {
 
         fun processCommand() = when (command.lowercase()) {
             "fight" -> fight()
+            "controls" -> displayUserCommands()
             "move" -> {
                 val direction = Direction.values().firstOrNull { it.name.equals(argument, ignoreCase = true) }
                 if (direction != null) {
