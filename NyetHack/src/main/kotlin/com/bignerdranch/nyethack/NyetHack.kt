@@ -63,6 +63,11 @@ object Game {
     // A function that gives details about the rooms that can be entered.
     fun getRoomDetails(currentRoom: Room) {
         TODO()
+        val currentRoom = currentRoom
+        val northernRoom: Room
+        val easternRoom: Room
+        val southernRoom: Room
+        val weasternRoom: Room
         // Get a list of the rooms attached to player's current room
         // Display details about each room that player can enter
     }
