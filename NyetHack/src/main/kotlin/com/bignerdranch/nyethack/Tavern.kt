@@ -32,13 +32,17 @@ class Tavern : Room(TAVERN_NAME) {
 
     override fun enterRoom() {
         narrate("${player.name} enters $TAVERN_NAME")
-        narrate("There are several items for sale:")
-        narrate(menuItems.joinToString())
         narrate("${player.name} sees several patrons in the tavern:")
         narrate(patrons.joinToString())
         narrate("The item of the day is the $itemOfDay.")
 
         placeOrder(patrons.random(), menuItems.random())
+    }
+
+    // A function to print a list of menu items upon the player's request
+    fun readMenu() {
+        narrate("There are several items for sale:")
+        narrate(menuItems.joinToString())
     }
 
     private fun placeOrder(
