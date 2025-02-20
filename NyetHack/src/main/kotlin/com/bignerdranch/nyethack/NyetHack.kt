@@ -61,7 +61,7 @@ object Game {
     }
 
     // A function that gives details about the rooms that can be entered.
-    fun getRoomDetails(roomList: List<Room>) {
+    fun getRoomDetails(currentRoom: Room) {
         TODO()
         // Get a list of the rooms attached to player's current room
         // Display details about each room that player can enter
