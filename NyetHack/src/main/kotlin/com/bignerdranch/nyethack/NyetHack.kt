@@ -3,7 +3,6 @@ package com.bignerdranch.nyethack
 import kotlin.concurrent.thread
 import kotlin.system.exitProcess
 
-var heroName: String = ""
 lateinit var player: Player
 
 fun main() {
