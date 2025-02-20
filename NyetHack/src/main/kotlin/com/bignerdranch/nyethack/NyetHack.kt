@@ -1,6 +1,5 @@
 package com.bignerdranch.nyethack
 
-import kotlin.concurrent.thread
 import kotlin.system.exitProcess
 
 lateinit var player: Player
