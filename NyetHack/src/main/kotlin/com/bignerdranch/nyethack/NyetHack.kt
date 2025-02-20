@@ -49,7 +49,7 @@ object Game {
         narrate("${player.name}, $mortality, has ${player.healthPoints} health points.")
     }
 
-    // Making a function that displays the possible commands a player has available to them.
+    // A function that displays the possible commands a player has available to them.
     fun displayUserCommands() {
         narrate("""
             |The available commands to use in NyetHack are:
@@ -58,6 +58,13 @@ object Game {
             |take loot - If their is a chest in the room, the player will open it and retrieve the contents.
             |sell loot - If you are located in a room with a sellers box, you will automatically sell everything sellable in your inventory.
         """.trimMargin())
+    }
+
+    // A function that gives details about the rooms that can be entered.
+    fun getRoomDetails(roomList: List<Room>) {
+        TODO()
+        // Get a list of the rooms attached to player's current room
+        // Display details about each room that player can enter
     }
 
     fun play() {
