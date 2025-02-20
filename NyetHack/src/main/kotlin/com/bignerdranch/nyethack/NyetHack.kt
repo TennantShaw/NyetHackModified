@@ -13,6 +13,7 @@ fun main() {
         |You can already hear a faint whisper of the future. The sound of the
         |people calling out your name, ${player.name}, the, ${player.title}.
     """.trimMargin())
+    Game.displayUserCommands()
     Game.play()
 }
 
