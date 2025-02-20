@@ -50,6 +50,17 @@ object Game {
         narrate("${player.name}, $mortality, has ${player.healthPoints} health points.")
     }
 
+    // Making a function that displays the possible commands a player has available to them.
+    fun displayUserCommands() {
+        narrate("""
+            |The available commands to use in NyetHack are:
+            |move (cardinal direction) - i.e. move north, move south, move east, move west. This will move your player in the direction specified.
+            |fight - If a monster is currently in the room, this command will engage combat. Combat is currently automatic and will end when the monster or player is defeated.
+            |take loot - If their is a chest in the room, the player will open it and retrieve the contents.
+            |sell loot - If you are located in a room with a sellers box, you will automatically sell everything sellable in your inventory.
+        """.trimMargin())
+    }
+
     fun play() {
         while (true) {
             narrate("""
